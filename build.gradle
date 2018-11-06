@@ -6,10 +6,11 @@ android {
     dexOptions {
         jumboMode true
         incremental true 
+	preDexLibraries false
 	javaMaxHeapSize "4g"
     }
 }
 
 dependencies {
-  compile 'com.android.support:multidex:1.0.1'
+  compile 'com.android.support:multidex:1.0.3'
 }
